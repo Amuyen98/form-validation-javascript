@@ -1,0 +1,97 @@
+body{
+    background-color: #292929;
+    color: #2be271;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui;
+}
+
+
+
+#registroForm {
+    animation: shadow-pulse 2s infinite ease-in-out;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 0px 5px #77ebff33;
+    }
+    50% {
+        box-shadow: 0px 0px 60px #77ebff33;
+    }
+    100% {
+        box-shadow: 0px 0px 5px #77ebff33;
+    }
+}
+
+#formulario {
+    display: grid;
+    grid-template-columns: 120px auto; /* 100px para el label, y auto para el input */
+    gap: 5px; /* Espacio entre las columnas */
+    align-items: center;
+}::placeholder{
+    color: #12996c56;
+}
+
+select {
+    color: #000000; /* Color por defecto */
+}
+select option {
+    color: #12996c; /* Color de las opciones */
+}
+
+label {
+    text-align: left; /* Alinea el texto del label a la derecha */
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#registroForm {
+    padding: 30px;
+    border: 0.1px solid #2be271;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #292929, #3e5547);
+}
+
+#aceptoTerminos{
+    margin-top: 20px;
+}
+
+#tituloPublicidad{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#registrarse{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 6px;
+}
+
+input[type="submit"]{
+    background-color: #292929;
+    border-color: #2be271;
+    color: #2be271;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .2s;
+}
+input[type="submit"]:hover{
+    background-color: #2be27141;
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.error{
+    color: rgb(255, 240, 240);
+    font-size: 10px;
+    font-weight: lighter;
+}
