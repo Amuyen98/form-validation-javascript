@@ -38,7 +38,7 @@ function validarFormulario() {
     const email = document.getElementById('email');
     let errorEmail = document.getElementById('errorEMail')
 
-    if (/^[^\s@]+@[^\s@].[^\s@]+$/.test(email.value)) {
+    if (/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(email.value)) {
         ocultarError(errorEmail)
     }else{
         mostrarError(errorEmail, 'ingrese un correo válido.')
